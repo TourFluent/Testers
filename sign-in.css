@@ -1,0 +1,523 @@
+.solid-button-container {
+  display: flex;
+  position: relative;
+}
+.solid-button-button {
+  color: var(--dl-color-gray-white);
+  border: none;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-doubleunit);
+  border-radius: 50px;
+  padding-right: var(--dl-space-space-doubleunit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: var(--dl-color-primary-darkblue);
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 1200px) {
+  .solid-button-root-class-name2 {
+    width: auto;
+    height: auto;
+  }
+}
+
+.sign-in-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: flex-start;
+  background-color: var(--dl-color-primary-blue);
+  background-image: url("public/playground_assets/happy-family-travelling-by-car-with-camping-equipment-top_74855-10751-1500w.jpeg");
+}
+.sign-in-form {
+  top: 143px;
+  right: 208px;
+  width: 540px;
+  height: 607px;
+  position: absolute;
+  background-color: var(--dl-color-primary-darkblue);
+}
+.sign-in-container01 {
+  top: 0px;
+  left: 0px;
+  width: 469px;
+  height: 502px;
+  position: absolute;
+}
+.sign-in-button {
+  transition: 0.3s;
+}
+.sign-in-button:hover {
+  color: var(--dl-color-gray-white);
+  border-color: var(--dl-color-primary-blue);
+  border-width: 3px;
+  background-color: var(--dl-color-primary-darkblue);
+}
+.sign-in-container02 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-in-container03 {
+  top: 223px;
+  left: 61.5px;
+  width: 100%;
+  height: 173px;
+  position: absolute;
+}
+.sign-in-container04 {
+  top: -74px;
+  left: 0px;
+  width: 100%;
+  height: 247px;
+  position: absolute;
+}
+.sign-in-container05 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sign-in-textinput {
+  transition: 0.3s;
+}
+.sign-in-textinput:focus {
+  background-color: var(--dl-color-primary-blue);
+}
+.sign-in-container06 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.sign-in-container07 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.sign-in-container08 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.sign-in-container09 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sign-in-textinput1 {
+  transition: 0.3s;
+}
+.sign-in-textinput1:focus {
+  background-color: var(--dl-color-primary-blue);
+}
+.sign-in-container10 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sign-in-textinput2 {
+  transition: 0.3s;
+}
+.sign-in-textinput2:hover {
+  background-color: var(--dl-color-primary-blue);
+}
+.sign-in-navbar {
+  width: 1161px;
+  height: 104px;
+  display: flex;
+  padding: var(--dl-space-space-doubleunit);
+  max-width: 1000px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sign-in-navlink1 {
+  display: contents;
+}
+.sign-in-image {
+  width: 361px;
+  height: 129px;
+  object-fit: cover;
+  text-decoration: none;
+}
+.sign-in-right-side {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sign-in-links-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sign-in-navlink2 {
+  margin-right: var(--dl-space-space-doubleunit);
+  text-decoration: none;
+}
+.sign-in-navlink3 {
+  color: var(--dl-color-gray-black);
+  margin-right: var(--dl-space-space-doubleunit);
+  text-decoration: none;
+}
+.sign-in-navlink4 {
+  padding-right: var(--dl-space-space-doubleunit);
+}
+.sign-in-text07 {
+  font-size: 14px;
+  transition: 0.3s;
+  font-family: Poppins;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-doubleunit);
+  text-transform: none;
+  text-decoration: none;
+}
+
+.sign-in-burger-menu {
+  display: none;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sign-in-burger-menu {
+  width: 24px;
+  height: 24px;
+}
+.sign-in-mobile-menu {
+  top: 0px;
+  flex: 0 0 auto;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  padding: var(--dl-space-space-doubleunit);
+  z-index: 100;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.sign-in-nav {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sign-in-top {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-doubleunit);
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sign-in-close-menu {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sign-in-icon03 {
+  width: 24px;
+  height: 24px;
+}
+.sign-in-right-side1 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sign-in-links-container1 {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sign-in-text08 {
+  margin-bottom: 8px;
+}
+.sign-in-text09 {
+  margin-bottom: 8px;
+}
+.sign-in-text10 {
+  margin-bottom: 8px;
+}
+.sign-in-link {
+  display: contents;
+}
+.sign-in-follow-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sign-in-text12 {
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.sign-in-icons-container {
+  width: 100px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sign-in-link1 {
+  display: contents;
+}
+.sign-in-icon05 {
+  width: 24px;
+  height: 24px;
+}
+.sign-in-link2 {
+  display: contents;
+}
+.sign-in-icon07 {
+  width: 24px;
+  height: 24px;
+}
+.sign-in-link3 {
+  display: contents;
+}
+.sign-in-icon09 {
+  width: 24px;
+  height: 24px;
+}
+@media(max-width: 1600px) {
+  .sign-in-container {
+    z-index: 100;
+    align-items: flex-end;
+    background-size: cover;
+    justify-content: flex-start;
+    background-image: url("public/playground_assets/happy-family-travelling-by-car-with-camping-equipment-top_74855-10751-1500w.jpeg");
+  }
+  .sign-in-form {
+    top: 152px;
+    right: 77px;
+    width: 469px;
+    height: 552px;
+    position: absolute;
+    border-radius: 30px;
+    background-color: var(--dl-color-primary-darkblue);
+  }
+  .sign-in-container01 {
+    left: 0px;
+    right: 0px;
+    height: 479px;
+    margin: auto;
+  }
+  .sign-in-button {
+    left: 0px;
+    color: var(--dl-color-gray-black);
+    right: 0px;
+    width: 269px;
+    bottom: 42px;
+    margin: auto;
+    position: absolute;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: var(--dl-space-space-tripleunit);
+    text-align: center;
+    font-weight: 600;
+    margin-left: auto;
+    border-width: 0px;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-bottom: auto;
+    background-color: rgb(255, 255, 255);
+  }
+  .sign-in-text {
+    left: 0px;
+    color: var(--dl-color-gray-white);
+    right: 0px;
+    bottom: -5px;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+  }
+  .sign-in-navlink {
+    text-decoration: underline;
+  }
+  .sign-in-text02 {
+    top: 29px;
+    left: 59px;
+    color: var(--dl-color-gray-white);
+    position: absolute;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 600;
+  }
+  .sign-in-container02 {
+    top: 91px;
+    left: 0px;
+    right: 0px;
+    width: 414px;
+    height: 57px;
+    margin: auto;
+    position: absolute;
+  }
+  .sign-in-text03 {
+    color: var(--dl-color-gray-white);
+  }
+  .sign-in-container03 {
+    top: 224px;
+    left: 0px;
+    right: 0px;
+    width: 348px;
+    margin: auto;
+  }
+  .sign-in-container04 {
+    left: 0px;
+    right: 0px;
+    width: 350px;
+    margin: auto;
+  }
+  .sign-in-container05 {
+    top: 0px;
+    left: 0px;
+    width: 346px;
+    height: 166px;
+    margin: auto;
+    position: absolute;
+    flex-direction: column;
+  }
+  .sign-in-text04 {
+    color: var(--dl-color-gray-white);
+    align-self: flex-start;
+  }
+  .sign-in-textinput {
+    top: var(--dl-space-space-doubleunit);
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    border-width: 0px;
+    border-radius: var(--dl-radius-radius-radius8);
+  }
+  .sign-in-container07 {
+    border-width: 0px;
+  }
+  .sign-in-container08 {
+    border-width: 0px;
+  }
+  .sign-in-container09 {
+    top: 74px;
+    left: 0px;
+    width: 346px;
+    height: 166px;
+    margin: auto;
+    position: absolute;
+    flex-direction: column;
+  }
+  .sign-in-textinput1 {
+    top: var(--dl-space-space-doubleunit);
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    border-width: 0px;
+    border-radius: var(--dl-radius-radius-radius8);
+  }
+  .sign-in-text05 {
+    color: var(--dl-color-gray-white);
+    align-self: flex-start;
+  }
+  .sign-in-container10 {
+    left: 0px;
+    right: 0px;
+    width: 346px;
+    bottom: 0px;
+    height: 93px;
+    margin: auto;
+    position: absolute;
+    flex-direction: column;
+  }
+  .sign-in-textinput2 {
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    border-width: 0px;
+    border-radius: var(--dl-radius-radius-radius8);
+  }
+  .sign-in-text06 {
+    color: var(--dl-color-gray-white);
+    align-self: flex-start;
+  }
+  .sign-in-navbar {
+    width: 1040px;
+    height: 142px;
+    align-self: center;
+  }
+  .sign-in-image {
+    width: 361px;
+    height: 106px;
+  }
+}
+@media(max-width: 1200px) {
+  .sign-in-text {
+    left: 0px;
+    right: 0px;
+    bottom: 4px;
+    margin: auto;
+  }
+}
+@media(max-width: 767px) {
+  .sign-in-navbar {
+    width: 767px;
+  }
+  .sign-in-right-side {
+    display: none;
+  }
+  .sign-in-burger-menu {
+    display: flex;
+  }
+}
+@media(max-width: 479px) {
+  .sign-in-form {
+    top: 159px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+  }
+  .sign-in-navbar {
+    width: 479px;
+  }
+}

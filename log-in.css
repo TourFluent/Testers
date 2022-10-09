@@ -1,0 +1,435 @@
+.solid-button-container {
+  display: flex;
+  position: relative;
+}
+.solid-button-button {
+  color: var(--dl-color-gray-white);
+  border: none;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-doubleunit);
+  border-radius: 50px;
+  padding-right: var(--dl-space-space-doubleunit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: var(--dl-color-primary-darkblue);
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 1200px) {
+  .solid-button-root-class-name2 {
+    width: auto;
+    height: auto;
+  }
+}
+
+.log-in-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: flex-start;
+  background-color: var(--dl-color-primary-blue);
+  background-image: url("public/playground_assets/happy-family-travelling-by-car-with-camping-equipment-top_74855-10751-1500w.jpeg");
+}
+.log-in-form {
+  top: 143px;
+  right: 208px;
+  width: 540px;
+  height: 607px;
+  position: absolute;
+  background-color: var(--dl-color-primary-darkblue);
+}
+.log-in-container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.log-in-container2 {
+  top: 0px;
+  left: 0px;
+  width: 469px;
+  height: 502px;
+  position: absolute;
+}
+.log-in-button {
+  transition: 0.3s;
+}
+.log-in-button:hover {
+  color: var(--dl-color-gray-white);
+  border-color: var(--dl-color-primary-blue);
+  border-width: 3px;
+  background-color: var(--dl-color-primary-darkblue);
+}
+.log-in-container3 {
+  top: 223px;
+  left: 61.5px;
+  width: 100%;
+  height: 173px;
+  position: absolute;
+}
+.log-in-container4 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.log-in-textinput {
+  transition: 0.3s;
+}
+.log-in-textinput:focus {
+  background-color: var(--dl-color-primary-blue);
+}
+.log-in-container5 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.log-in-textinput1 {
+  transition: 0.3s;
+}
+.log-in-textinput1:focus {
+  background-color: var(--dl-color-primary-blue);
+}
+.log-in-navbar {
+  width: 1161px;
+  height: 104px;
+  display: flex;
+  padding: var(--dl-space-space-doubleunit);
+  max-width: 1000px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.log-in-navlink1 {
+  display: contents;
+}
+.log-in-image {
+  width: 361px;
+  height: 129px;
+  object-fit: cover;
+  text-decoration: none;
+}
+.log-in-right-side {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.log-in-links-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.log-in-navlink2 {
+  margin-right: var(--dl-space-space-doubleunit);
+  text-decoration: none;
+}
+.log-in-navlink3 {
+  color: var(--dl-color-gray-black);
+  margin-right: var(--dl-space-space-doubleunit);
+  text-decoration: none;
+}
+.log-in-navlink4 {
+  padding-right: var(--dl-space-space-doubleunit);
+}
+.log-in-text06 {
+  font-size: 14px;
+  transition: 0.3s;
+  font-family: Poppins;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-doubleunit);
+  text-transform: none;
+  text-decoration: none;
+}
+
+.log-in-burger-menu {
+  display: none;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.log-in-burger-menu {
+  width: 24px;
+  height: 24px;
+}
+.log-in-mobile-menu {
+  top: 0px;
+  flex: 0 0 auto;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  padding: var(--dl-space-space-doubleunit);
+  z-index: 100;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.log-in-nav {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.log-in-top {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-doubleunit);
+  flex-direction: row;
+  justify-content: space-between;
+}
+.log-in-close-menu {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.log-in-icon03 {
+  width: 24px;
+  height: 24px;
+}
+.log-in-right-side1 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.log-in-links-container1 {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.log-in-text07 {
+  margin-bottom: 8px;
+}
+.log-in-text08 {
+  margin-bottom: 8px;
+}
+.log-in-text09 {
+  margin-bottom: 8px;
+}
+.log-in-link {
+  display: contents;
+}
+.log-in-follow-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.log-in-text11 {
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.log-in-icons-container {
+  width: 100px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.log-in-link1 {
+  display: contents;
+}
+.log-in-icon05 {
+  width: 24px;
+  height: 24px;
+}
+.log-in-link2 {
+  display: contents;
+}
+.log-in-icon07 {
+  width: 24px;
+  height: 24px;
+}
+.log-in-link3 {
+  display: contents;
+}
+.log-in-icon09 {
+  width: 24px;
+  height: 24px;
+}
+@media(max-width: 1600px) {
+  .log-in-container {
+    z-index: 100;
+    align-items: flex-end;
+    background-size: cover;
+    justify-content: flex-start;
+    background-image: url("public/playground_assets/happy-family-travelling-by-car-with-camping-equipment-top_74855-10751-1500w.jpeg");
+  }
+  .log-in-form {
+    top: 152px;
+    right: 77px;
+    width: 469px;
+    height: 475px;
+    position: absolute;
+    border-radius: 30px;
+    background-color: var(--dl-color-primary-darkblue);
+  }
+  .log-in-text {
+    top: 30px;
+    left: 110px;
+    color: var(--dl-color-gray-white);
+    position: absolute;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 600;
+  }
+  .log-in-container1 {
+    top: 91px;
+    left: 0px;
+    right: 0px;
+    width: 414px;
+    height: 57px;
+    margin: auto;
+    position: absolute;
+  }
+  .log-in-text01 {
+    color: var(--dl-color-gray-white);
+  }
+  .log-in-container2 {
+    height: 405px;
+  }
+  .log-in-button {
+    left: 100px;
+    color: var(--dl-color-gray-black);
+    width: 269px;
+    bottom: 56.203125px;
+    margin: auto;
+    position: absolute;
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 600;
+    border-width: 0px;
+    border-radius: 30px;
+    background-color: #ffffff;
+  }
+  .log-in-text02 {
+    left: 0px;
+    color: var(--dl-color-gray-white);
+    right: 0px;
+    bottom: 4px;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+  }
+  .log-in-navlink {
+    text-decoration: underline;
+  }
+  .log-in-container3 {
+    top: 133px;
+  }
+  .log-in-container4 {
+    top: 0px;
+    left: 0px;
+    width: 346px;
+    height: 166px;
+    margin: auto;
+    position: absolute;
+    flex-direction: column;
+  }
+  .log-in-textinput {
+    top: var(--dl-space-space-doubleunit);
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    border-width: 0px;
+    border-radius: var(--dl-radius-radius-radius8);
+  }
+  .log-in-text04 {
+    color: var(--dl-color-gray-white);
+    align-self: flex-start;
+  }
+  .log-in-container5 {
+    top: 80px;
+    left: 0px;
+    width: 346px;
+    height: 93px;
+    margin: auto;
+    position: absolute;
+    flex-direction: column;
+  }
+  .log-in-textinput1 {
+    top: 32px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    border-width: 0px;
+    border-radius: var(--dl-radius-radius-radius8);
+  }
+  .log-in-text05 {
+    color: var(--dl-color-gray-white);
+    align-self: flex-start;
+  }
+  .log-in-navbar {
+    width: 1040px;
+    height: 142px;
+    align-self: center;
+  }
+  .log-in-image {
+    width: 361px;
+    height: 79px;
+  }
+  .log-in-links-container {
+    justify-content: space-between;
+  }
+}
+@media(max-width: 1200px) {
+  .log-in-text02 {
+    left: 0px;
+    right: 0px;
+    bottom: 4px;
+    margin: auto;
+  }
+}
+@media(max-width: 767px) {
+  .log-in-navbar {
+    width: 767px;
+  }
+  .log-in-right-side {
+    display: none;
+  }
+  .log-in-burger-menu {
+    display: flex;
+  }
+}
+@media(max-width: 479px) {
+  .log-in-form {
+    top: 159px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+  }
+  .log-in-navbar {
+    width: 479px;
+  }
+}
