@@ -8,8 +8,7 @@ During this workshop we will create a software system for a startup travel agenc
 
 * Create project using jira plugin with following extensions
 	* travelfluent
-	* OpenApi
-* Import project into Eclipse IDE - requires BPMN modeller plugin installed
+	
 * Create data model
 	* Traveller
 	* Hotel
@@ -24,10 +23,7 @@ During this workshop we will create a software system for a startup travel agenc
 	* Public business process to deal with complete travel request
 	* Private business process to deal with hotel booking
 	* Private business process to deal with flight booking
-* Create a test case that makes use of processes and decisions
-* Create or import UI components
-* Add metrics support for processes and decisions
-* Create dashboard based on metrics
+
 
 ## Data model
 
