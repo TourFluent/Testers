@@ -5,7 +5,7 @@
     <meta property="og:title" content="Travel Agency" />
 
     <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
     </style>
     <style data-tag="default-style-sheet">
       html {
@@ -25,14 +25,209 @@
 
       }
     </style>
+
+    <!-- Pop up style -->
+    <style>
+   #open-subscribe-form{
+  width: 150px;
+  height: 50px;
+  background-color: rgb(7, 117, 73);
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 3px;
+}
+.subscribe-form {
+  position:fixed;
+  top:-100%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(1.15);
+  width:calc(100% - 20px);
+  max-width:650px;
+  background:#fff;
+  border-radius:10px;
+  display:grid;
+  gap:10px;
+  padding:50px 40px 40px;
+  box-shadow:0px 4px 4px 4px rgba(0,0,0,0.05);
+  z-index:50;
+  opacity:0;
+  transition:top 0ms ease-in-out 300ms,
+             transform 300ms ease-in-out 0ms,
+             opacity 300ms ease-in-out 0ms;
+}
+.subscribe-form.active {
+  top:50%;
+  transform:translate(-50%,-50%) scale(1);
+  opacity:1;
+  transition:top 0ms ease-in-out 0ms,
+             transform 300ms ease-in-out 0ms,
+             opacity 300ms ease-in-out 0ms;
+}
+.subscribe-form .close-btn {
+  position:absolute;
+  top:10px;
+  right:10px;
+  font-size:25px;
+  color:rgb(255, 255, 255);
+  background-color: #0a3980ff;
+  border:none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor:pointer;
+}
+.subscribe-form .left {
+  display:flex;
+  align-items:center;
+}
+.subscribe-form .right h2 {
+  font-size:28px;
+  font-family:"Montserrat",sans-serif;
+  line-height:1.15;
+  margin-bottom:10px;
+  color:#111;
+}
+.subscribe-form .right p {
+  font-size:16px;
+  color:#555;
+  margin-bottom:15px;
+}
+.subscribe-form .right .form label {
+  display:block;
+  margin-bottom:5px;
+  font-size:15px;
+}
+.subscribe-form .right .form .input {
+  margin-bottom:10px;
+}
+.subscribe-form .right .form input {
+  width:100%;
+  padding:12px;
+  border:2px solid #0a3980ff;
+  font-size:17px;
+  border-radius:5px;
+}
+.subscribe-form .right .form button {
+  width:100%;
+  padding:10px;
+  font-size:18px;
+  border-radius:5px;
+  border:none;
+  outline:none;
+  cursor:pointer;
+  background:#0a3980;
+  color:#fff;
+  box-shadow:0px 2px 2px #ddd;
+}
+
+.subscribe-form .right .form button:hover {
+  color: #0A3980;
+  border-color: #0A3980;
+  border-style:solid;
+  border-width: 2px;
+  background-color: transparent;
+}
+
+.cover {
+background-color:black;
+width:100%;
+height:100%;
+display:none;
+position:fixed;
+top:0;
+left:0;
+z-index:10;
+}
+
+
+@media(min-width: 680px){
+  .subscribe-form {
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+
+</style>
+
+    <link
+      rel="shortcut icon"
+      href="/playground_assets/favicon1.png"
+      type="icon/png"
+      sizes="32x32"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
       data-tag="font"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+
+    <script>
+function submitForm (){
+
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/QdML4j5LncS5iPO8/',
+        type:'post',
+        data:$("#myform").serializeArray(),
+
+    });
+var element = document.getElementById("right");
+        element.innerHTML = "<h2>Welcome!</h2><p>Thank you for subscribing to our newsletter.</p>";
+}
+</script>
+
   </head>
-  <body>
+
+
+  <body onload="popup()">
+  <div class="cover"></div>
+  <!-- popup-->
+  <div class="subscribe-form">
+    <div class="left">
+      <img src="public/playground_assets/popphoto.png" alt="" width="100%">
+    </div>
+    <div class="right" id="right">
+      <h2>Visiting Hyderabad?
+Subscribe to our newsletter!</h2>
+      <p>Be the first to get exclusive offers and the latest news on tours and other services directly in your inbox!</p>
+      <div class="form">
+        <form id="myform">
+        <div class="input" style="border-style:none;">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="Email ID" placeholder="Email">
+        </div>
+        <div class="button">
+          <button onclick="submitForm()">Subscribe</button>
+        </div>
+          </form>
+      </div>
+    </div>
+    <button class="close-btn">
+      &times;
+    </button>
+  </div>
+
+
+  <script>
+  function popup(){
+  document.querySelector(".subscribe-form").classList.add("active");
+  $(".cover").fadeTo(500, 0.5);
+};
+
+document.querySelector(".subscribe-form .close-btn").addEventListener("click",function(){
+  document.querySelector(".subscribe-form").classList.remove("active");
+  $(".cover").fadeOut(500);
+});
+  </script>
+
+
+
+
     <div>
       <link href="./landing-page.css" rel="stylesheet" />
 
@@ -41,7 +236,7 @@
           <a href="index.html" class="landing-page-navlink">
             <img
               alt="image"
-              src="public/playground_assets/logo-200h.jpg"
+              src="public/playground_assets/logo1-200h.jpg"
               class="landing-page-image"
             />
           </a>
@@ -196,7 +391,7 @@
               <img
                 alt="image"
                 src="public/playground_assets/charminar-300h.webp"
-                class="landing-page-image1"
+                class="landing-page-image01"
               />
               <div class="landing-page-container02">
                 <span class="landing-page-text12">Charminar</span>
@@ -225,7 +420,7 @@
               <img
                 alt="image"
                 src="public/playground_assets/ramoji-film-city-hyderabad-tourism-entry-fee-timings-holidays-reviews-header-300h.jpeg"
-                class="landing-page-image2"
+                class="landing-page-image02"
               />
               <div class="landing-page-container04">
                 <span class="landing-page-text14">Ramoji Film City</span>
@@ -253,7 +448,7 @@
               <img
                 alt="image"
                 src="public/playground_assets/golconda-fort-hyderabad-tourism-entryfee-timings-package-tour-300h.jpeg"
-                class="landing-page-image3"
+                class="landing-page-image03"
               />
               <div class="landing-page-container06">
                 <span class="landing-page-text16">Golconda Fort</span>
@@ -282,7 +477,7 @@
                 <img
                   alt="image"
                   src="public/playground_assets/chowmahalla-1-17-300h.webp"
-                  class="landing-page-image4"
+                  class="landing-page-image04"
                 />
                 <div class="landing-page-container09">
                   <span class="landing-page-text18">Chowmahalla Palace</span>
@@ -311,7 +506,7 @@
               <img
                 alt="image"
                 src="public/playground_assets/birla-mandir-hyderabad-tourism-entryfee-timings-package-tour-300h.jpeg"
-                class="landing-page-image5"
+                class="landing-page-image05"
               />
               <div class="landing-page-container11">
                 <span class="landing-page-text20">Birla Mandir</span>
@@ -339,7 +534,7 @@
               <img
                 alt="image"
                 src="public/playground_assets/salar%20jung-300h.jpg"
-                class="landing-page-image6"
+                class="landing-page-image06"
               />
               <div class="landing-page-container13">
                 <span class="landing-page-text22">Salar Jung Museum</span>
@@ -366,147 +561,124 @@
               </div>
             </div>
           </div>
+          <div class="landing-page-container14">
+            <a href="hidden-places.html" class="landing-page-navlink7 button">
+              Explore Hidden Gems in the City
+            </a>
+          </div>
         </div>
         <h1 class="landing-page-text24">Blog Posts</h1>
         <div class="landing-page-blog">
-          <div class="landing-page-container14">
-            <div
-              class="blog-post-card1-blog-post-card blog-post-card1-root-class-name3"
-            >
+          <div class="landing-page-container15">
+            <div class="landing-page-blog-post-card">
               <img
                 alt="image"
                 src="public/playground_assets/blog%201-1500w.jpg"
-                class="blog-post-card1-image"
+                class="landing-page-image07"
               />
-              <div class="blog-post-card1-container">
-                <span class="blog-post-card1-text">
-                  <span>
-                    Once a Hyderabadi, Always a Hyderabadi - The Beauty of
-                    Hyderabad
-                  </span>
+              <div class="landing-page-container16">
+                <span class="landing-page-text25">
+                  Once a Hyderabadi, Always a Hyderabadi - The Beauty of
+                  Hyderabad
                 </span>
-                <span class="blog-post-card1-text1">
-                  <span>
-                    Once a Hyderabadi always a Hyderabadi is what describes a
-                    typical Hyderabadi wherever they go, be it out of the city
-                    or out of the country. The typical Hyderabadi hindi dialect,
-                    the laid back attitude, being a complete foodie and enjoying
-                    even a small achievement with a bunch of friends is what
-                    differentiates a hyderabadi from the others. The place has
-                    created such a kind of influence on its culture and people
-                    that one can easily identify a hyderabadi from a large group
-                    of people. The old heritage monuments, Pearls, the
-                    Hyderabadi biryani, Irani chai is what describes this city
-                    of Nawabs.
-                  </span>
+                <span class="landing-page-text26">
+                  Once a Hyderabadi always a Hyderabadi is what describes a
+                  typical Hyderabadi wherever they go, be it out of the city or
+                  out of the country. The typical Hyderabadi hindi dialect, the
+                  laid back attitude, being a complete foodie and enjoying even
+                  a small achievement with a bunch of friends is what
+                  differentiates a hyderabadi from the others. The place has
+                  created such a kind of influence on its culture and people
+                  that one can easily identify a hyderabadi from a large group
+                  of people. The old heritage monuments, Pearls, the Hyderabadi
+                  biryani, Irani chai is what describes this city of Nawabs.
                 </span>
-                <div class="blog-post-card1-container1">
-                  <div class="blog-post-card1-profile">
+                <div class="landing-page-container17">
+                  <div class="landing-page-profile">
                     <img
                       alt="profile"
                       src="https://st.depositphotos.com/1973997/1935/i/950/depositphotos_19353231-stock-photo-very-sad-man.jpg"
                       image_src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fG1hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTYyNjQzMTMwMw&amp;ixlib=rb-1.2.1&amp;h=1200"
-                      class="blog-post-card1-image1"
+                      class="landing-page-image08"
                     />
-                    <span class="blog-post-card1-text2">
-                      <span>Deev McForehead</span>
-                    </span>
+                    <span class="landing-page-text27">Deev McForehead</span>
                   </div>
-                  <span class="blog-post-card1-text3">
-                    <span>5 min read</span>
-                  </span>
+                  <span class="landing-page-text28">5 min read</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="landing-page-container15">
-            <div
-              class="blog-post-card1-blog-post-card blog-post-card1-root-class-name2"
-            >
+          <div class="landing-page-container18">
+            <div class="landing-page-blog-post-card1">
               <img
                 alt="image"
                 src="public/playground_assets/think-biryani-think-hyderabad-1500w.jpg"
-                class="blog-post-card1-image"
+                class="landing-page-image09"
               />
-              <div class="blog-post-card1-container">
-                <span class="blog-post-card1-text">
-                  <span>Think Biryani Think Hyderabad!!</span>
+              <div class="landing-page-container19">
+                <span class="landing-page-text29">
+                  Think Biryani Think Hyderabad!!
                 </span>
-                <span class="blog-post-card1-text1">
-                  <span>
-                    Amongst the numerous epithets associated with Hyderabad, the
-                    one which is most likely to attract tourists of all age
-                    groups, all generations, all genders alike is Biryani City.
-                    And the famous Hyderabadi Dum Biryani is synonymous with
-                    Paradise Restaurant or Persis Gold is a popular hotel
-                    located in MG Road, Secunderabad, India. Recipient of Best
-                    Biryani 2012 Times Food Award, does one really need any more
-                    incentives to taste the biryani of this restaurant?
-                  </span>
+                <span class="landing-page-text30">
+                  Amongst the numerous epithets associated with Hyderabad, the
+                  one which is most likely to attract tourists of all age
+                  groups, all generations, all genders alike is Biryani City.
+                  And the famous Hyderabadi Dum Biryani is synonymous with
+                  Paradise Restaurant or Persis Gold is a popular hotel located
+                  in MG Road, Secunderabad, India. Recipient of Best Biryani
+                  2012 Times Food Award, does one really need any more
+                  incentives to taste the biryani of this restaurant?
                 </span>
-                <div class="blog-post-card1-container1">
-                  <div class="blog-post-card1-profile">
+                <div class="landing-page-container20">
+                  <div class="landing-page-profile1">
                     <img
                       alt="profile"
                       src="public/playground_assets/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959-200h.jpg"
                       image_src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fG1hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTYyNjQzMTMwMw&amp;ixlib=rb-1.2.1&amp;h=1200"
-                      class="blog-post-card1-image1"
+                      class="landing-page-image10"
                     />
-                    <span class="blog-post-card1-text2">
-                      <span>Yeneesa Weiner</span>
-                    </span>
+                    <span class="landing-page-text31">Yeneesa Weiner</span>
                   </div>
-                  <span class="blog-post-card1-text3">
-                    <span>5 min read</span>
-                  </span>
+                  <span class="landing-page-text32">5 min read</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="landing-page-container16">
-            <div
-              class="blog-post-card1-blog-post-card blog-post-card1-root-class-name1"
-            >
+          <div class="landing-page-container21">
+            <div class="landing-page-blog-post-card2">
               <img
                 alt="image"
                 src="public/playground_assets/shopping-street-in-hyderabad-1280x720-1500w.jpg"
-                class="blog-post-card1-image"
+                class="landing-page-image11"
               />
-              <div class="blog-post-card1-container">
-                <span class="blog-post-card1-text">
-                  <span>Shopping in Hyderabad</span>
+              <div class="landing-page-container22">
+                <span class="landing-page-text33">Shopping in Hyderabad</span>
+                <span class="landing-page-text34">
+                  The city of Hyderabad along with umpteen numbers of
+                  sightseeing options also offers interesting shopping options.
+                  The city is known for shopping for pearls, handicrafts along
+                  with various apparels, leather goods and traditional jewelry.
+                  From high end shopping malls offering all kinds of
+                  international brands to local bazaars and roadside stalls, the
+                  city of Hyderabad presents its visitors with an ultimate
+                  shopping experience. Some of the common shopping areas of
+                  Hyderabad are Abids, Basheer Bagh, Nampally, Begum Bazar, Laad
+                  Bazaar and MG Road. At these places, you will find both
+                  shopping malls as well as stores for good.
                 </span>
-                <span class="blog-post-card1-text1">
-                  <span>
-                    The city of Hyderabad along with umpteen numbers of
-                    sightseeing options also offers interesting shopping
-                    options. The city is known for shopping for pearls,
-                    handicrafts along with various apparels, leather goods and
-                    traditional jewelry. From high end shopping malls offering
-                    all kinds of international brands to local bazaars and
-                    roadside stalls, the city of Hyderabad presents its visitors
-                    with an ultimate shopping experience. Some of the common
-                    shopping areas of Hyderabad are Abids, Basheer Bagh,
-                    Nampally, Begum Bazar, Laad Bazaar and MG Road. At these
-                    places, you will find both shopping malls as well as stores
-                    for good.
-                  </span>
-                </span>
-                <div class="blog-post-card1-container1">
-                  <div class="blog-post-card1-profile">
+                <div class="landing-page-container23">
+                  <div class="landing-page-profile2">
                     <img
                       alt="profile"
                       src="public/playground_assets/istockphoto-1300512215-612x612-200h.jpg"
                       image_src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fG1hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTYyNjQzMTMwMw&amp;ixlib=rb-1.2.1&amp;h=1200"
-                      class="blog-post-card1-image1"
+                      class="landing-page-image12"
                     />
-                    <span class="blog-post-card1-text2">
-                      <span>Foornatree Prenchpries</span>
+                    <span class="landing-page-text35">
+                      Foornatree Prenchpries
                     </span>
                   </div>
-                  <span class="blog-post-card1-text3">
-                    <span>5 min read</span>
-                  </span>
+                  <span class="landing-page-text36">5 min read</span>
                 </div>
               </div>
             </div>
@@ -518,8 +690,8 @@
               <h1 class="landing-page-logo1">TOURFLUENT</h1>
             </a>
             <div class="landing-page-links-container2">
-              <div class="landing-page-container17">
-                <a href="tour-packages.html" class="landing-page-navlink7">
+              <div class="landing-page-container24">
+                <a href="tour-packages.html" class="landing-page-navlink8">
                   Tour packages
                 </a>
                 <a
@@ -541,7 +713,7 @@
               </div>
             </div>
             <div class="landing-page-follow-container1">
-              <span class="landing-page-text25">Follow us on</span>
+              <span class="landing-page-text37">Follow us on</span>
               <div class="landing-page-icons-container1">
                 <a
                   href="https://instagram.com"
