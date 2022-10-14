@@ -1,0 +1,42 @@
+.component4-container {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+@media(max-width: 1600px) {
+  .component4-container {
+    top: 223px;
+    left: 0px;
+    right: 0px;
+    width: 346px;
+    bottom: 0px;
+    height: 166px;
+    margin: auto;
+    position: absolute;
+    flex-direction: column;
+  }
+  .component4-textinput {
+    top: var(--dl-space-space-doubleunit);
+    left: 0px;
+    right: 0px;
+    width: 272px;
+    margin: auto;
+    position: absolute;
+    border-width: 0px;
+    border-radius: var(--dl-radius-radius-radius8);
+  }
+  .component4-text {
+    color: var(--dl-color-gray-white);
+    align-self: flex-start;
+  }
+}
+@media(max-width: 1200px) {
+  .component4-container {
+    top: -141px;
+    left: -45px;
+  }
+}
