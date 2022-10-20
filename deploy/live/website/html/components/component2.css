@@ -1,0 +1,23 @@
+.component2-container {
+  width: 100%;
+  height: 484px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  background-image: url('https://images.unsplash.com/photo-1547841243-eacb14453cd9?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIyfHxjaXR5fGVufDB8fHx8MTYyNjE4NjYxMg&ixlib=rb-1.2.1&w=1400');
+  background-position: center;
+}
+.component2-image {
+  width: 681px;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 515px;
+  padding-right: 17px;
+}
+@media(max-width: 991px) {
+  .component2-container {
+    height: 350px;
+  }
+}
