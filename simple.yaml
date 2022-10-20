@@ -1,0 +1,10 @@
+name : shell commands
+
+on: [push]
+  
+  jobs:
+     rin-shell-command:
+       runs-on: ubuntu-latest
+       steps:
+           - name: echo a string
+           runs: echo "hello"
