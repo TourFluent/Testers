@@ -134,15 +134,19 @@ To do:
 - Chat bot 
 - Booking hotels through our website
 
+Run Locally
+---
+
+- Run this command `git clone https://github.com/TourFluent/Developers.git`
+- You are now in the dev environment and you can play around
+
+
 
 
 
 
 ## Acknowledgements
 - This project was inspired by https://www.hyderabadtourism.travel/
-
-## Git Hub Clone URl
-https://github.com/TourFluent/Developers.git
 
 
 
